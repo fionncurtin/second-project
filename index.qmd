@@ -2,10 +2,16 @@
 title: "second-project"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
+This is my super cool project for super cool people.
 ```{r}
-1 + 1
+#| echo: false
+
+library(tidyverse)
+library(tidycensus)
+library(tmap)
+library(knitr)
+
+my_plot <- read_rds("plot-1.rds")
+
+my_plot
 ```
